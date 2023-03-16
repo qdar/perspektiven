@@ -1,0 +1,32 @@
+.menu {
+  margin-bottom: 48px;
+
+  @include laptop {
+    margin-bottom: 0;
+    display: flex;
+    gap: 48px;
+    margin-right: auto;
+  }
+}
+
+.menu__item {
+  padding: 2px 0;
+
+  @include laptop {
+    padding: 0;
+  }
+}
+
+.menu__link {
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: $transition;
+
+  @include laptop {
+    padding: 16px 0;
+  }
+}
+
+.menu__link:hover {
+  color: $hover-color;
+}

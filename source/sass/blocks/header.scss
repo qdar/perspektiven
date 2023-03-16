@@ -1,0 +1,22 @@
+.header {
+  background-color: $white;
+}
+
+.header__container {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  @include laptop {
+    height: 80px;
+  }
+}
+
+.header__logo {
+
+  @include laptop {
+    margin-right: 82px;
+  }
+}
