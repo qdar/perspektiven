@@ -38,31 +38,26 @@
 }
 
 .burger__nav {
-  width: 260px;
-  padding: 36px;
-  background-color: $gray;
-  box-sizing: border-box;
-  position: absolute;
-  top: 62px;
-  right: 0;
-  transition: $transition;
-  transform: translate(120%, 0);
+  @include mobile-tablet-only {
+    width: 260px;
+    padding: 36px;
+    background-color: $gray;
+    box-sizing: border-box;
+    position: absolute;
+    top: 62px;
+    right: 0;
+    transition: $transition;
+    transform: translate(120%, 0);
+  }
 
   @include laptop {
-    background-color: $white;
-    position: relative;
-    transform: translate(0, 0);
-    padding: 0;
     display: flex;
     width: 100%;
-    top: 0;
   }
 }
 
 .burger--open + .burger__nav {
-  transform: translate(24px, 0);
-
-  @include laptop {
-    transform: translate(0, 0);
+  @include mobile-tablet-only {
+    transform: translate(24px, 0);
   }
 }
