@@ -1,0 +1,68 @@
+.footer {
+  background-color: $black;
+  padding: 48px 0;
+}
+
+.footer__container {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 36px;
+
+  @include laptop {
+    gap: 32px;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+.footer__name {
+  color: $white;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 145%;
+  text-transform: uppercase;
+
+  @include laptop {
+    font-size: 36px;
+  }
+}
+
+.footer-menu {
+  color: $white;
+  display: grid;
+  gap: 16px;
+
+  @include laptop {
+    grid-template-columns: 1fr 1fr;
+    align-content: flex-end;
+    gap: 16px 36px;
+  }
+}
+
+.footer-menu__link {
+  color: $white;
+  transition: $transition;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.footer-menu .footer-menu__item:nth-child(2) {
+  @include laptop {
+    order: 1;
+  }
+}
+
+.footer-menu .footer-menu__item:nth-child(3) {
+  @include laptop {
+    order: 2;
+  }
+}

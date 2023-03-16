@@ -1,5 +1,5 @@
 html {
-  overflow: hidden;
+  height: 100%;
 }
 
 body {
@@ -14,7 +14,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
-  overflow: hidden;
 }
 
 main {
