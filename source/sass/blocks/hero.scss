@@ -1,0 +1,113 @@
+.hero__container {
+  @include laptop {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+  }
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include laptop {
+    font-size: 46px;
+  }
+}
+
+.hero__text {
+  @include laptop {
+    margin-right: 80px;
+  }
+}
+
+.hero__indent {
+  display: grid;
+  gap: 16px 0;
+  margin-top: 24px;
+
+  @include laptop {
+    margin-top: 4px;
+    grid-template-columns: 3fr 7fr;
+    gap: 32px 0;
+  }
+
+  & p {
+    @include laptop {
+      grid-column-start: 2;
+    }
+  }
+}
+
+.hero__image {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 36px;
+  background-color: $gray;
+  background-image: url(../img/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/hero-mobile@2x.jpg);
+  }
+
+  @include laptop {
+    height: 350px;
+    margin-top: 40px;
+    justify-content: start;
+    background-image: url(../img/hero-desktop.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hero-desktop@2x.jpg);
+    }
+  }
+}
+
+.hero__box {
+  margin-bottom: 40px;
+
+  @include laptop {
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+}
+
+.hero__button {
+  margin: 24px auto 0;
+
+  @include laptop {
+    margin: 0;
+    justify-self: flex-end;
+  }
+}
+
+.circle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  background-color: $yellow;
+}
+
+.circle-button::after {
+  content: '';
+  background-image: url(../img/svg/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 24px;
+  margin-left: 8px;
+  transition: $transition;
+}
+
+.circle-button:hover::after {
+  transform: translate(4px, 0)
+}

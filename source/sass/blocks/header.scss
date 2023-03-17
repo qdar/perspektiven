@@ -1,5 +1,7 @@
 .header {
+  width: 100%;
   background-color: $white;
+  position: fixed;
 }
 
 .header__container {
@@ -15,8 +17,7 @@
 }
 
 .header__logo {
-
   @include laptop {
-    margin-right: 82px;
+    margin-right: 80px;
   }
 }

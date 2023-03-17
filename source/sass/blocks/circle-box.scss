@@ -1,0 +1,23 @@
+.circle-box {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: $yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.circle-box__title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.circle-box__text {
+  font-size: 14px;
+  margin: 0 24px;
+  line-height: 120%;
+}

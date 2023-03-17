@@ -17,10 +17,10 @@ body {
 }
 
 main {
-  margin-top: 340px;
+  margin-top: 78px;
 
   @include laptop {
-    margin-top: calc(80px + 72px);
+    margin-top: calc(80px + 36px);
   }
 }
 
