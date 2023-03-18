@@ -1,0 +1,51 @@
+.about {
+  margin-top: 100px;
+}
+
+.about__title {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @include laptop {
+    font-size: 36px;
+    margin-left: 25%;
+  }
+}
+
+.about__subtitle {
+  font-size: 22px;
+  line-height: 145%;
+
+  @include laptop {
+    text-indent: 25%;
+    font-size: 24px;
+  }
+}
+
+.about__content {
+  margin-top: 36px;
+
+  @include laptop {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+  }
+}
+
+.about__text {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include laptop {
+    flex-direction: row;
+    gap: 36px;
+    margin-top: 0;
+    align-items: center;
+  }
+}
+
+.about__box {
+  margin: 0 auto;
+}
