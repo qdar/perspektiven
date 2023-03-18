@@ -77,8 +77,22 @@
       </div>
     </section>
     <section class="goods">
-      <div class="container">
-
+      <div class="goods__container container">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/goods-pc.webp 1x, img/goods-pc@2x.webp 2x">
+          <source type="image/webp" srcset="img/goods-mobile.webp 1x, img/goods-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/goods-pc.jpg 1x, img/goods-pc@2x.jpg 2x">
+          <img class="image-box__image" src="img/goods-mobile.jpg"  width="666" height="700" srcset="img/goods-mobile@2x.jpg 2x" loading="lazy" alt="О нашем бренде.">
+        </picture>
+        <div class="goods__content">
+          <h2 class="goods__title">Our goods</h2>
+          <p class="goods__subtitle">TECHNISCHE TEXTILIEN LORRACH GmbH & Co. KG</p>
+          <p>Technische Textilien Lorrach company (Germany) produces special textiles including materials for furniture upholstery, mattresses, covers as well as materials for sewing ironing linen:</p>
+          <p class="goods__subtitle">TULONA®</p>
+          <p>TULONA® industrial textiles are available as needle and nonwoven materials — felts made of various polymers such as polyester, polypropylene, polyacrylonitrile, aramid, PPS, polyimide, PVC, PTFE and viscose. Mixtures of fibers are also possible. After some additional chemical, thermal and surface treatments, the finished goods become well adaptable to usage conditions.</p>
+          <p class="goods__end">TULON industrial textiles are widely used in such industries</p>
+          <a class="button" href="#">More</a>
+        </div>
       </div>
     </section>
   </main>
