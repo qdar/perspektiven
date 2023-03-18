@@ -1,0 +1,52 @@
+.advantages {
+  margin-top: $padding-mobile;
+
+  @include laptop {
+    margin-top: $padding-pc;
+  }
+}
+
+.advantages__title {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @include laptop {
+    font-size: 36px;
+    // margin-left: 34%;
+    margin-bottom: 36px;
+  }
+}
+
+.advantages__list {
+  counter-reset: section;
+  display: grid;
+  gap: 36px;
+
+  @include laptop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item::before {
+  display: block;
+  counter-increment: section;
+  content: counter(section,decimal-leading-zero);
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.advantages__item p + p {
+  margin-top: 16px;
+}
+
+.advantages__button {
+  margin-top: 36px;
+}
