@@ -19,6 +19,8 @@
 
 .header__logo {
   @include laptop {
+    display: flex;
+    flex-shrink: 0;
     margin-right: 80px;
   }
 }
