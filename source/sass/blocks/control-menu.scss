@@ -24,9 +24,19 @@
   color: $hover-color;
 }
 
-.control-menu__link--flag::before {
+.control-menu__link--mkd::before {
   content: '';
   background-image: url(../img/svg/mkg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.control-menu__link--eng::before {
+  content: '';
+  background-image: url(../img/svg/eng.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 32px;
