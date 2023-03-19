@@ -8,15 +8,15 @@
   height: 64px;
 
   @include laptop {
-    width: 154px;
     min-width: 154px;
+    max-width: 198px;
   }
-}
 
-.button--circle {
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
+  &--circle {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .button::after {

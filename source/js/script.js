@@ -6,3 +6,10 @@ for (i = 0; i < burger.length; i++) {
     menu.classList.toggle("burger--open");
   }
 };
+
+$(document).ready(function() {
+  $('.facts__sidebar')
+    .theiaStickySidebar({
+      additionalMarginTop: 120
+    });
+});

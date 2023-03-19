@@ -1,0 +1,63 @@
+.facts {
+  margin-top: $padding-mobile;
+
+  @include laptop {
+    margin-top: $padding-pc;
+  }
+}
+
+.facts__container {
+  display: grid;
+
+  @include laptop {
+    grid-template-columns: 3fr 9fr;
+  }
+}
+
+.facts__sidebar {
+  order: 1;
+
+  @include laptop {
+    order: -1;
+  }
+}
+
+.facts__item {
+  background-color: $gray;
+  padding: 32px;
+
+  @include laptop {
+    padding: 48px 126px;
+    display: flex;
+  }
+}
+
+.facts__item::before {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 39px;
+  background-image: url(../img/svg/logo-facts.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 16px;
+
+  @include laptop {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
+}
+
+.facts__item + .facts__item {
+  margin-top: 32px;
+}
+
+.facts__text {
+  margin: 36px 0;
+
+  @include laptop {
+    margin-right: 50px;
+    margin-top: 0;
+  }
+}

@@ -20,7 +20,7 @@ main {
   margin-top: 78px;
 
   @include laptop {
-    margin-top: calc(80px + 36px);
+    margin-top: 116px;
   }
 }
 
@@ -35,19 +35,6 @@ img {
   height: auto;
   object-fit: contain;
 }
-
-// h1.headline + p, h2.headline + p {
-//   margin-top: 24px;
-
-//   @include laptop {
-//     margin-top: 36px;
-//   }
-// }
-
-// p:not(:last-child) {
-//   margin-top: 0;
-//   margin-bottom: 16px;
-// }
 
 p {
   margin: 0;
