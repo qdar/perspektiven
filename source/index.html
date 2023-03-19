@@ -12,19 +12,19 @@
     <div class="header__container container">
       <img class="header__logo" src="img/svg/logo.svg" width="270" height="30" alt="Perspektiven logo">
       <button class="js-burger burger"></button>
-      <nav class="header__nav burger__nav">
+      <nav class="js-burger header__nav burger__nav">
         <ul class="menu clear-list">
           <li class="menu__item">
-            <a class="menu__link" href="#">About</a>
+            <a class="menu__link" href="#about">About</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">ADVANTAGES</a>
+            <a class="menu__link" href="#products">Products</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">PRODUCTS</a>
+            <a class="menu__link" href="#advantages">Advantages</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Contacts</a>
+            <a class="menu__link" href="#contacts">Contacts</a>
           </li>
         </ul>
         <ul class="control-menu clear-list">
@@ -59,7 +59,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <h2 class="about__title">ABOUT COMPANY</h2>
         <p class="about__subtitle">PERSPEKTIVEN PAT DOOEL SKORJE company is ready to offer a wide range of household goods (expendable and packing materials, disposable tableware, household goods and other groups of household products). Our area of expertise also includes household garments and textile for home decoration and our customers are major Macedonian retailors of garments and textiles.</p>
@@ -76,7 +76,7 @@
         </div>
       </div>
     </section>
-    <section class="goods">
+    <section id="products" class="goods">
       <div class="goods__container container">
         <picture>
           <source type="image/webp" media="(min-width: 1200px)" srcset="img/goods-pc.webp 1x, img/goods-pc@2x.webp 2x">
@@ -95,7 +95,7 @@
         </div>
       </div>
     </section>
-    <section class="advantages">
+    <section id="advantages" class="advantages">
       <div class="container">
         <h2 class="advantages__title">Advantages</h2>
         <ul class="advantages__list clear-list">
@@ -171,7 +171,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="contacts" class="footer">
     <div class="footer__container container">
       <div class="footer__logo">
         <img src="img/svg/logo-footer.svg" width="43" height="46" alt="Perspektiven logo">
@@ -207,6 +207,7 @@
   </div>
 
   <script src="js/sticky-sidebar.js"></script>
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -14,6 +14,8 @@ $(document).ready(function() {
     });
 });
 
+let scroll = new SmoothScroll('a[href*="#"]', {speed: 400});
+
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');

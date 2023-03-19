@@ -1,8 +1,8 @@
 .advantages {
-  margin-top: $padding-mobile;
+  padding-top: $padding-mobile;
 
   @include laptop {
-    margin-top: $padding-pc;
+    padding-top: $padding-pc;
   }
 }
 
