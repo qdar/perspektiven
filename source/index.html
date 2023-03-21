@@ -124,8 +124,10 @@
       <div class="facts__container container">
         <h2 class="visually-hidden">Some facts about us</h2>
         <div class="facts__sidebar">
-          <p class="facts__text">Contact us and reduce your costs of finding, selecting, processing and shipping the goods you need to run your business.</p>
-          <a class="button popup-link" href="#popup">Contact us</a>
+          <div class="facts__content">
+            <p class="facts__text">Contact us and reduce your costs of finding, selecting, processing and shipping the goods you need to run your business.</p>
+            <a class="button popup-link" href="#popup">Contact us</a>
+          </div>
         </div>
         <ul class="facts__list clear-list">
           <li class="facts__item">
@@ -210,9 +212,9 @@
           <h2 class="popup__title">Contact Information</h2>
           <p>Fill out the form below, and we will be in touch shortly.</p>
           <form class="form" action="#" method="POST">
-            <input class="form__input input" type="text" name="name" id="name" placeholder="Name">
-            <input class="form__input input" type="tel" name="phone" id="phone" placeholder="Phone*">
-            <input class="form__input input" type="email" name="email" id="email" placeholder="Email*">
+            <input class="form__input input" type="text" name="name" id="name" placeholder="Name" required>
+            <input class="form__input input" type="tel" name="phone" id="phone" placeholder="Phone*" required>
+            <input class="form__input input" type="email" name="email" id="email" placeholder="Email*" required>
             <button class="button" type="submit">Submit</button>
           </form>
         </div>
@@ -220,7 +222,6 @@
     </div>
   </div>
 
-  <script src="js/sticky-sidebar.js"></script>
   <script src="js/smooth-scroll.polyfills.min.js"></script>
   <script src="js/script.js"></script>
 </body>

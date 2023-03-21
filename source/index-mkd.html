@@ -124,8 +124,10 @@
       <div class="facts__container container">
         <h2 class="visually-hidden">Факты о нашей компании</h2>
         <div class="facts__sidebar">
-          <p class="facts__text">Контактирајте не и намалете ги трошоците за наоѓање, селектирање, обработка и испорака на стоката што ви е потребна за водење на вашиот бизнис.</p>
-          <a class="button popup-link" href="#popup">Пиши ни</a>
+          <div class="facts__content">
+            <p class="facts__text">Контактирајте не и намалете ги трошоците за наоѓање, селектирање, обработка и испорака на стоката што ви е потребна за водење на вашиот бизнис.</p>
+            <a class="button popup-link" href="#popup">Пиши ни</a>
+          </div>
         </div>
         <ul class="facts__list clear-list">
           <li class="facts__item">
@@ -210,9 +212,9 @@
           <h2 class="popup__title">Контакт Информации</h2>
           <p>Пополнете го формуларот подолу и наскоро ќе стапиме во контакт.</p>
           <form class="form" action="#" method="POST">
-            <input class="form__input input" type="text" name="name" id="name" placeholder="Име">
-            <input class="form__input input" type="tel" name="phone" id="phone" placeholder="Телефон*">
-            <input class="form__input input" type="email" name="email" id="email" placeholder="Email*">
+            <input class="form__input input" type="text" name="name" id="name" placeholder="Име" required>
+            <input class="form__input input" type="tel" name="phone" id="phone" placeholder="Телефон*" required>
+            <input class="form__input input" type="email" name="email" id="email" placeholder="Email*" required>
             <button class="button" type="submit">Отправить</button>
           </form>
         </div>
@@ -220,7 +222,6 @@
     </div>
   </div>
 
-  <script src="js/sticky-sidebar.js"></script>
   <script src="js/smooth-scroll.polyfills.min.js"></script>
   <script src="js/script.js"></script>
 </body>

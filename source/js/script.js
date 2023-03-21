@@ -7,12 +7,6 @@ for (i = 0; i < burger.length; i++) {
   }
 };
 
-$(document).ready(function() {
-  $('.facts__sidebar')
-    .theiaStickySidebar({
-      additionalMarginTop: 120
-    });
-});
 
 let scroll = new SmoothScroll('a[href*="#"]', {speed: 400});
 
