@@ -37,7 +37,7 @@ return gulp.src('source/*.html')
 // Scripts
 
 const scripts = () => {
-return gulp.src('source/js/*.js')
+return gulp.src('source/js/*.js', 'source/js/modal/*.js')
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());
 }

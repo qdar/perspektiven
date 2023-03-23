@@ -19,6 +19,7 @@
   text-transform: uppercase;
   display: flex;
   transition: $transition;
+  line-height: 135%;
 
   &:hover {
     color: $hover-color;
