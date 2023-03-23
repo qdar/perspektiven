@@ -32,10 +32,8 @@
   @include laptop {
     margin-top: 4px;
     margin-left: 30%;
-  }
 
-  & p {
-    @include laptop {
+    p {
       grid-column-start: 2;
     }
   }

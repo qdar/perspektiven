@@ -6,38 +6,38 @@
   @include laptop {
     display: none;
   }
+
+  &::after,
+  &::before {
+    content: "";
+    height: 2px;
+    width: 24px;
+    background-color: $black;
+    position: absolute;
+    left: 0;
+    transition: $transition;
+  }
+
+  &::before {
+    top: 11px;
+  }
+
+  &::after {
+    bottom: 11px;
+  }
+
+  &--open::before {
+    transform: rotate(45deg);
+    top: 16px;
+  }
+
+  &--open::after {
+    transform: rotate(-45deg);
+    top: 16px;
+  }
 }
 
-.burger::after,
-.burger::before {
-  content: "";
-  height: 2px;
-  width: 24px;
-  background-color: $black;
-  position: absolute;
-  left: 0;
-  transition: $transition;
-}
-
-.burger::before {
-  top: 11px;
-}
-
-.burger::after {
-  bottom: 11px;
-}
-
-.burger--open::before {
-  transform: rotate(45deg);
-  top: 16px;
-}
-
-.burger--open::after {
-  transform: rotate(-45deg);
-  top: 16px;
-}
-
-.burger__nav {
+.burger-nav {
   @include mobile-tablet-only {
     width: 260px;
     padding: 36px;
@@ -56,7 +56,7 @@
   }
 }
 
-.burger--open + .burger__nav {
+.burger--open + .burger-nav {
   @include mobile-tablet-only {
     transform: translate(24px, 0);
   }

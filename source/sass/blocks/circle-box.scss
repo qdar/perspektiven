@@ -9,11 +9,11 @@
   justify-content: center;
   text-align: center;
   gap: 16px;
-}
 
-.circle-box--small {
-  width: 226px;
-  height: 226px;
+  &--small {
+    width: 226px;
+    height: 226px;
+  }
 }
 
 .circle-box__title {

@@ -1,6 +1,7 @@
 .control-menu {
   @include laptop {
     display: flex;
+    align-items: center;
     gap: 74px;
   }
 }
@@ -18,43 +19,42 @@
   text-transform: uppercase;
   display: flex;
   transition: $transition;
-}
 
-.control-menu__link:hover {
-  color: $hover-color;
-}
+  &:hover {
+    color: $hover-color;
+  }
 
-.control-menu__link--mkd::before {
-  content: '';
-  background-image: url(../img/svg/mkg.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 32px;
-  height: 24px;
-  margin-right: 8px;
-}
+  &--mkd::before,
+  &--eng::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 24px;
+    margin-right: 8px;
+  }
 
-.control-menu__link--eng::before {
-  content: '';
-  background-image: url(../img/svg/eng.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 32px;
-  height: 24px;
-  margin-right: 8px;
-}
+  &--mkd::before {
+    background-image: url(../img/svg/mkg.svg);
+  }
 
-.control-menu__link--arrow::after {
-  content: '';
-  background-image: url(../img/svg/arrow.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 32px;
-  height: 24px;
-  margin-left: 8px;
-  transition: $transition;
-}
+  &--eng::before {
+    background-image: url(../img/svg/eng.svg);
+  }
 
-.control-menu__link--arrow:hover::after {
-  transform: translate(4px, 0)
+  &--arrow::after {
+    content: '';
+    background-image: url(../img/svg/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 24px;
+    margin-left: 8px;
+    transition: $transition;
+  }
+
+  &--arrow:hover::after {
+    transform: translate(4px, 0);
+  }
+
 }

@@ -2,8 +2,8 @@
   margin: 0 24px;
 
   @include laptop {
+    padding: 0 5px;
     margin: 0 auto;
     max-width: 1368px;
-    padding: 0 5px;
   }
 }

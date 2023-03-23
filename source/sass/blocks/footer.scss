@@ -36,13 +36,20 @@
 
 .footer-menu {
   color: $white;
-  display: grid;
-  gap: 16px;
 
   @include laptop {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    align-content: flex-end;
+    align-content: end;
     gap: 16px 36px;
+  }
+}
+
+.footer-menu__item + .footer-menu__item {
+  margin-top: 16px;
+
+  @include laptop {
+    margin-top: 0;
   }
 }
 

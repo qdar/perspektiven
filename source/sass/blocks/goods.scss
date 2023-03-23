@@ -7,13 +7,10 @@
 }
 
 .goods__container {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-
   @include laptop {
-    flex-direction: row;
+    display: flex;
     align-items: center;
+    gap: 36px;
   }
 }
 
@@ -42,7 +39,10 @@
 }
 
 .goods__content {
+  margin-top: 36px;
+
   @include laptop {
     width: 50%;
+    margin-top: 0;
   }
 }

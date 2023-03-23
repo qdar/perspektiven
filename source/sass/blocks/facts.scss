@@ -32,39 +32,51 @@
 .facts__item {
   background-color: $gray;
   padding: 32px;
+  position: relative;
 
   @include laptop {
     padding: 48px 126px;
-    display: flex;
   }
+
+  &::before {
+    content: '';
+    width: 36px;
+    height: 39px;
+    background-image: url(../img/svg/logo-facts.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 16px;
+    position: absolute;
+
+    @include laptop {
+      margin-bottom: 0;
+      margin-right: 24px;
+    }
+  }
+
+  & + & {
+    margin-top: 32px;
+  }
+
 }
 
-.facts__item::before {
-  content: '';
-  display: block;
-  width: 36px;
-  height: 39px;
-  background-image: url(../img/svg/logo-facts.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-bottom: 16px;
+.facts__item p {
+  margin-top: 60px;
 
   @include laptop {
-    flex-shrink: 0;
-    margin-bottom: 0;
-    margin-right: 24px;
+    margin-top: 0;
+    margin-left: 60px;
   }
-}
 
-.facts__item + .facts__item {
-  margin-top: 32px;
+  & + p {
+    margin-top: 16px;
+  }
 }
 
 .facts__text {
   margin: 36px 0;
 
   @include laptop {
-    margin-right: 50px;
-    margin-top: 0;
+    margin: 0 50px 36px 0;
   }
 }

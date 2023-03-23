@@ -41,18 +41,27 @@
 
 .about__text {
   margin-top: 36px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 
   @include laptop {
-    flex-direction: row;
-    gap: 36px;
     margin-top: 0;
+    display: flex;
     align-items: center;
+    gap: 36px;
+  }
+
+  & p {
+    margin-bottom: 16px;
+
+    @include laptop {
+      margin-bottom: 0;
+    }
   }
 }
 
 .about__box {
   margin: 0 auto;
+
+  @include laptop {
+    margin: 0;
+  }
 }
