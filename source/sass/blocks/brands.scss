@@ -1,0 +1,57 @@
+.brands {
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+
+  @include laptop {
+    padding-top: $padding-pc;
+    padding-bottom: $padding-pc;
+  }
+
+  &__container {
+    display: grid;
+    gap: 80px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 60px;
+
+    @include tablet {
+      order: 2;
+      gap: 0;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    @include tablet {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $black;
+      margin-bottom: -1px;
+      margin-right: -1px;
+    }
+  }
+
+  &__item:first-child {
+    @include tablet {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__link {
+    box-sizing: border-box;
+    padding: 35px;
+  }
+
+  &__item img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -27,9 +27,6 @@
             <a class="menu__link" href="#products">Products</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#advantages">Advantages</a>
-          </li>
-          <li class="menu__item">
             <a class="menu__link" href="#contacts">Contacts</a>
           </li>
         </ul>
@@ -46,22 +43,10 @@
   </header>
   <main>
     <section id="top" class="hero">
-      <div class="container">
-        <div class="hero__container">
-          <div class="hero__content">
-            <h1 class="hero__title">We are thorough, reliable and on time.</h1>
-            <div class="hero__indent">
-              <p class="hero__title">Deal with professionals.</p>
-              <p class="hero__text">Reduce your costs of sourcing, selecting, processing and shipping the goods you need to run your business.</p>
-            </div>
-          </div>
-          <button class="hero__button button button--circle" type="button" data-open-modal="modal-1">Contact us</button>
-        </div>
-        <div class="hero__image">
-          <div class="hero__box circle-box">
-            <p class="circle-box__title">We are opening а&nbsp;retail store!</p>
-            <p class="circle-box__text">Await additional information about the location and working hours</p>
-          </div>
+      <div class="container hero__image">
+        <div class="hero__box circle-box">
+          <p class="circle-box__title">We are opening a&nbsp;retail store!</p>
+          <p class="circle-box__text">Await additional information about the location and working hours</p>
         </div>
       </div>
     </section>
@@ -71,7 +56,7 @@
         <p class="about__subtitle">PERSPEKTIVEN PAT DOOEL SKORJE company is ready to offer a wide range of household goods (expendable and packing materials, disposable tableware, household goods and other groups of household products). Our area of expertise also includes household garments and textile for home decoration and our customers are major Macedonian retailors of garments and textiles.</p>
         <div class="about__content">
           <div class="about__box circle-box circle-box--small">
-            <p class="circle-box__text">We are happy to&nbsp;offer you a&nbsp;wide&nbsp;range of</p>
+            <p class="circle-box__text circle-box__text--up">We are happy to&nbsp;offer you a&nbsp;wide&nbsp;range of</p>
             <p class="circle-box__title">More than 10,000 products</p>
           </div>
           <div class="about__text">
@@ -82,123 +67,80 @@
         </div>
       </div>
     </section>
-    <section id="products" class="goods">
-      <div class="goods__container container">
+    <section class="brands">
+      <div class="brands__container container">
+        <ul class="clear-list brands__list">
+          <li class="brands__item">
+            <a class="brands__link" href="benjamin-moore.html">
+              <img src="img/logo-01.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="borastapeter.html">
+              <img src="img/logo-02.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="texam.html">
+              <img src="img/logo-03.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="fardis.html">
+              <img src="img/logo-04.png" alt="">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="estahome.html">
+              <img src="img/svg/logo-05.svg" alt="">
+            </a>
+          </li>
+        </ul>
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/goods-pc.webp 1x, img/goods-pc@2x.webp 2x">
-          <source type="image/webp" srcset="img/goods-mobile.webp 1x, img/goods-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/brands-pc.webp 1x, img/brands-pc@2x.webp 2x">
+          <source type="image/webp" srcset="img/brands.webp 1x, img/brands@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/brands-pc.jpg 1x, img/brands-pc@2x.jpg 2x">
+          <img class="brands__image" src="img/brands.jpg" width="666" height="768" srcset="img/brands.jpg@2x.jpg 2x" loading="lazy" alt="brands">
+        </picture>
+      </div>
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="contacts__container container">
+        <div class="contacts__content">
+          <h2 class="contacts__title">Visit our showroom located in Skopje</h2>
+          <p>Our professionals can provide you catalogs and samples of all brands from our store, product and color support and help you with your business needs.</p>
+          <p>Ivan Kozarov No.31 local 12 Skopje</p>
+          <a class="contacts__link" href="tel:+38971499961">+389 714 999 61</a>
+          <button class="contacts__button button button--border" type="button" data-open-modal="modal-1">Contact us</button>
+        </div>
+        <picture>
+          <source type="image/webp" srcset="img/contacts.webp 1x, img/contacts@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/goods-pc.jpg 1x, img/goods-pc@2x.jpg 2x">
-          <img src="img/goods-mobile.jpg"  width="666" height="700" srcset="img/goods-mobile@2x.jpg 2x" loading="lazy" alt="О нашем бренде.">
+          <img class="contacts__image" src="img/contacts.jpg" width="342" height="405" srcset="img/contacts.jpg@2x.jpg 2x" loading="lazy" alt="Contact">
         </picture>
-        <div class="goods__content">
-          <h2 class="goods__title">Our goods</h2>
-          <p class="goods__subtitle">TECHNISCHE TEXTILIEN LORRACH GmbH & Co. KG</p>
-          <p>Technische Textilien Lorrach company (Germany) produces special textiles including materials for furniture upholstery, mattresses, covers as well as materials for sewing ironing linen:</p>
-          <p class="goods__subtitle">TULONA®</p>
-          <p>TULONA® industrial textiles are available as needle and nonwoven materials — felts made of various polymers such as polyester, polypropylene, polyacrylonitrile, aramid, PPS, polyimide, PVC, PTFE and viscose. Mixtures of fibers are also possible. After some additional chemical, thermal and surface treatments, the finished goods become well adaptable to usage conditions.</p>
-          <p class="goods__end">TULON industrial textiles are widely used in such industries</p>
-          <button class="button" type="button" data-open-modal="modal-1">More</button>
-        </div>
       </div>
     </section>
-    <section id="advantages" class="advantages">
-      <div class="container">
-        <h2 class="advantages__title">Advantages</h2>
-        <ul class="advantages__list clear-list">
-          <li class="advantages__item">
-            <p>While choosing products from domestic and foreign manufacturers, we carefully select and test all the products. We are constantly improving our product portfolio with exclusive and relevant novelties.</p>
-            <p>Our permanent cooperation with the largest manufacturers allows us to set the best prices.</p>
-          </li>
-          <li class="advantages__item">
-            <p>PERSPEKTIVEN PAT DOOEL SKORJE company provides the full customers service, which allows you to buy a wide range of necessary items easily.</p>
-            <p>Our offer will be equally useful for online and offline retailers and wholesalers. We will help you to form and maintain the actual assortment for your profitable business.</p>
-          </li>
-          <li class="advantages__item">
-            <p>Our suppliers include large producers from China and Turkey and the largest trademarks of Italy, France and other European countries.</p>
-            <button class="advantages__button button" type="button" data-open-modal="modal-1">More</button>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="facts">
-      <div class="facts__container container">
-        <h2 class="visually-hidden">Some facts about us</h2>
-        <div class="facts__sidebar">
-          <div class="facts__content">
-            <p class="facts__text">Contact us and reduce your costs of finding, selecting, processing and shipping the goods you need to run your business.</p>
-            <button type="button" class="button" data-open-modal="modal-1">Contact us</button>
-          </div>
-        </div>
-        <ul class="facts__list clear-list">
-          <li class="facts__item">
-            <p>PERSPEKTIVEN PAT DOOEL SKORJE offers a high quality service, provides its customers with complex services in various regions of the world. We are constantly expanding the geography of deliveries.</p>
-          </li>
-          <li class="facts__item">
-            <p>PERSPEKTIVEN PAT DOOEL SKORJE is interested in the best proposal for its customers and therefore it chooses reliable and verified suppliers.</p>
-          </li>
-          <li class="facts__item">
-            <p>We carefully consider each proposed co-operation with manufacturers, products and services suppliers In order to make the best ratio of «price-quality».</p>
-          </li>
-          <li class="facts__item">
-            <p>We are ready to offer you a great deal of experience, a huge assortment, our professional team, flexible price policy and individual operating conditions. We provide you with optimal logistics solutions, so you are able to take your time for your business development.</p>
-          </li>
-          <li class="facts__item">
-            <p>Cooperating with global and local brands, we offer you a lot of experience, efficient logistics and professional work to promote your products.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="gallery">
-      <div class="gallery__container container">
-        <h2 class="visually-hidden">Gallery</h2>
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-pc.webp 1x, img/photo-1-pc@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-1.webp 1x, img/photo-1@2.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/photo-1-pc.jpg 1x, img/photo-1-pc@2x.jpg 2x">
-          <img class="gallery__image" src="img/photo-1.jpg"  width="514" height="631" srcset="img/photo-1@2.jpg 2x" loading="lazy" alt="">
-        </picture>
 
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-pc.webp 1x, img/photo-2-pc@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-2.webp 1x, img/photo-2@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/photo-2-pc.jpg 1x, img/photo-2-pc@2x.jpg 2x">
-          <img class="gallery__image" src="img/photo-2.jpg"  width="514" height="631" srcset="img/photo-2-pc@2x.jpg 2x" loading="lazy" alt="">
-        </picture>
 
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-pc.webp 1x, img/photo-3-pc@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-3.webp 1x, img/photo-3@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/photo-3-pc.jpg 1x, img/photo-3-pc@2x.jpg 2x">
-          <img class="gallery__image" src="img/photo-3.jpg"  width="514" height="631" srcset="img/photo-3-pc@2x.jpg 2x" loading="lazy" alt="">
-        </picture>
-
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-pc.webp 1x, img/photo-4-pc@2x.webp 2x">
-          <source type="image/webp" srcset="img/photo-4.webp 1x, img/photo-4@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/photo-4-pc.jpg 1x, img/photo-4-pc@2x.jpg 2x">
-          <img class="gallery__image" src="img/photo-4.jpg"  width="514" height="631" srcset="img/photo-4-pc@2x.jpg 2x" loading="lazy" alt="">
-        </picture>
-      </div>
-    </section>
   </main>
   <footer id="contacts" class="footer">
     <div class="footer__container container">
-      <div class="footer__logo">
+      <section class="footer__logo">
         <img src="img/svg/logo-footer.svg" width="43" height="46" alt="Perspektiven logo">
         <p class="footer__name">Perspektiven pat dooel skorje</p>
-      </div>
+      </section>
       <ul class="footer__navigation footer-menu clear-list">
         <li class="footer-menu__item">
           <a class="footer-menu__link" href="tel:+38971769560">+38971769560</a>
-        </li>
-        <li class="footer-menu__item">
-          <p>Ul.Jordan Mijalkov br.30-1 1000 Skopje, Macedonia</p>
         </li>
         <li class="footer-menu__item">
           <a class="footer-menu__link" href="mailto:info@perspektiven-pd.com">info@perspektiven-pd.com</a>
         </li>
         <li class="footer-menu__item">
           <a class="footer-menu__link" href="mailto:goran.r@perspektiven-pd.com">goran.r@perspektiven-pd.com</a>
+        </li>
+        <li class="footer-menu__item">
+          <p class="footer-menu__text">Ul.Jordan Mijalkov br.30-1 1000 Skopje, Macedonia</p>
         </li>
       </ul>
     </div>

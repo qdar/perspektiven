@@ -1,6 +1,6 @@
 .button {
   color: $black;
-  background-color: $yellow;
+  background-color: $accent-color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,30 +8,49 @@
   width: 100%;
   height: 64px;
   padding: 0 6px;
+  box-sizing: border-box;
 
   @include laptop {
     min-width: 154px;
-    max-width: 225px;
-  }
-
-  &--circle {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    max-width: 260px;
   }
 
   &::after {
-    content: '';
-    background-image: url(../img/svg/arrow.svg);
+    content: "";
+    background-image: url("../img/svg/arrow.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 32px;
     height: 24px;
-    margin-left: 8px;
+    margin-left: 10px;
     transition: $transition;
   }
 
+  &:hover {
+    color: $black;
+  }
+
   &:hover::after {
-    transform: translate(4px, 0)
+    transform: translate(4px, 0);
+  }
+
+  &--border {
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $white;
+
+    &::after {
+      background-image: url("../img/svg/arrow-light.svg");
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &--whithout-arrow {
+    &::after {
+      display: none;
+    }
   }
 }

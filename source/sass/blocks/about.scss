@@ -4,64 +4,63 @@
   @include laptop {
     padding-top: $padding-pc;
   }
-}
 
-.about__title {
-  font-size: 32px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 24px;
-
-  @include laptop {
-    font-size: 36px;
-    margin-left: 25%;
-    margin-bottom: 36px;
-  }
-}
-
-.about__subtitle {
-  font-size: 22px;
-  line-height: 145%;
-
-  @include laptop {
-    text-indent: 25%;
-    font-size: 24px;
-  }
-}
-
-.about__content {
-  margin-top: 36px;
-
-  @include laptop {
-    display: grid;
-    grid-template-columns: 2fr 6fr;
-  }
-}
-
-.about__text {
-  margin-top: 36px;
-
-  @include laptop {
+  &__title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
     margin-top: 0;
-    display: flex;
-    align-items: center;
-    gap: 36px;
+    margin-bottom: 24px;
+
+    @include laptop {
+      font-size: 36px;
+      margin-left: 25%;
+      margin-bottom: 36px;
+    }
   }
 
-  & p {
+  &__subtitle {
+    font-size: 22px;
+    line-height: 145%;
+
+    @include laptop {
+      text-indent: 25%;
+      font-size: 24px;
+    }
+  }
+
+  &__content {
+    margin-top: 36px;
+
+    @include laptop {
+      display: grid;
+      grid-template-columns: 2fr 6fr;
+    }
+  }
+
+  &__text {
+    margin-top: 36px;
+
+    @include laptop {
+      margin-top: 24px;
+      display: flex;
+      gap: 36px;
+    }
+  }
+
+  &__text p {
     margin-bottom: 16px;
 
     @include laptop {
       margin-bottom: 0;
     }
   }
-}
 
-.about__box {
-  margin: 0 auto;
+  &__box {
+    margin: 0 auto;
 
-  @include laptop {
-    margin: 0;
+    @include laptop {
+      margin: 0;
+    }
   }
 }

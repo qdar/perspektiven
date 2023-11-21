@@ -1,0 +1,71 @@
+.contacts {
+  color: $white;
+  background-color: $blue;
+  padding-top: $padding-mobile;
+  padding-bottom: 30px;
+
+  @include tablet {
+    padding-top: $padding-pc;
+    padding-bottom: $padding-pc;
+    background-image: url("../img/contacts-pc.jpg");
+    background-repeat: no-repeat;
+    background-size: 49%;
+    background-position: top left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/contacts-pc@2x.jpg");
+    }
+  }
+
+  &__container {
+    display: grid;
+    gap: 80px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    @include laptop {
+      font-size: 36px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__content {
+    @include tablet {
+      order: 2;
+    }
+
+    @include laptop {
+      padding-right: 140px;
+    }
+  }
+
+  &__content p {
+    margin-bottom: 24px;
+  }
+
+  &__image {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: $white;
+  }
+
+  &__button {
+    margin-top: 60px;
+  }
+}

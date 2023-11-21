@@ -1,0 +1,67 @@
+.company {
+  margin-bottom: 40px;
+
+  @include laptop {
+    margin-top: 60px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include laptop {
+      font-size: 36px;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @include laptop {
+      display: block;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    @include laptop {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__container {
+    @include tablet {
+      display: grid;
+      grid-template-columns: 432px 1fr;
+      gap: 36px;
+    }
+  }
+
+  &__text {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px;
+    }
+  }
+
+  &__content p {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    margin-top: 40px;
+  }
+
+  &__image {
+    margin-top: 60px;
+
+    @include tablet {
+      order: -1;
+      margin-top: 0;
+    }
+  }
+}

@@ -3,24 +3,24 @@
   background-color: $white;
   position: fixed;
   z-index: 1;
-}
 
-.header__container {
-  height: 62px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-
-  @include laptop {
-    height: 80px;
-  }
-}
-
-.header__logo {
-  @include laptop {
+  &__container {
+    height: 56px;
     display: flex;
-    flex-shrink: 0;
-    margin-right: 80px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include laptop {
+      height: 80px;
+    }
+  }
+
+  &__logo {
+    @include laptop {
+      display: flex;
+      flex-shrink: 0;
+      margin-right: 80px;
+    }
   }
 }

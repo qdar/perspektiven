@@ -4,30 +4,23 @@
   @include laptop {
     margin-bottom: 0;
     display: flex;
-    gap: 48px;
+    gap: 60px;
+    margin-left: auto;
     margin-right: auto;
   }
-}
 
-.menu__item {
-  padding: 2px 0;
+  &__link {
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: $transition;
+    padding: 4px 0;
 
-  @include laptop {
-    padding: 0;
+    @include laptop {
+      padding: 16px 0;
+    }
   }
-}
 
-.menu__link {
-  display: block;
-  font-size: 16px;
-  text-transform: uppercase;
-  transition: $transition;
-
-  @include laptop {
-    padding: 16px 0;
+  &__link:hover {
+    color: $hover-color;
   }
-}
-
-.menu__link:hover {
-  color: $hover-color;
 }

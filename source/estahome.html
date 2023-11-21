@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PERSPEKTIVEN</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" crossorigin="anonymous">
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a class="header__logo" href="#top">
+        <img src="img/svg/logo.svg" width="270" height="30" alt="Perspektiven logo">
+      </a>
+      <button class="js-burger burger">
+        <span class="visually-hidden">Open menu</span>
+      </button>
+      <nav class="js-burger burger-nav">
+        <ul class="menu clear-list">
+          <li class="menu__item">
+            <a class="menu__link" href="#about">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#products">Products</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+        <ul class="control-menu clear-list">
+          <li class="control-menu__item">
+            <a class="control-menu__link control-menu__link--mkd" href="index-mkd.html">MKD</a>
+          </li>
+          <li class="control-menu__item">
+            <button class="control-menu__link control-menu__link--arrow" type="button" data-open-modal="modal-1">Contact us</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="company">
+      <div class="company__container container">
+        <div class="company__content">
+          <header class="company__header">
+            <h1 class="company__title">ESTAhome</h1>
+            <img class="company__logo" src="img/svg/logo-05.svg" alt="">
+          </header>
+          <p>ESTAhome are a Dutch design company bringing fresh, bold designs for wallpapers. From their Netherlands based studio, ESTAhome produce a wide range of adaptable wallpaper designs that would suit any interior space. ESTAhome create high-quality, innovative and eco-friendly products. The total manufacturing process meets the highest standards for ecologically responsible production: only paper from sustainable forestry and environmentally friendly solvent-free inks are used for the production of our wallpapers.</p>
+          <a class="company__button button" href="https://www.estahome.co.uk/wallpaper/">All wallpapers</a>
+        </div>
+        <img class="company__image" src="img/ESTAhome.jpg" alt="">
+      </div>
+    </section>
+
+  </main>
+  <footer id="contacts" class="footer">
+    <div class="footer__container container">
+      <section class="footer__logo">
+        <img src="img/svg/logo-footer.svg" width="43" height="46" alt="Perspektiven logo">
+        <p class="footer__name">Perspektiven pat dooel skorje</p>
+      </section>
+      <ul class="footer__navigation footer-menu clear-list">
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="tel:+38971769560">+38971769560</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="mailto:info@perspektiven-pd.com">info@perspektiven-pd.com</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="mailto:goran.r@perspektiven-pd.com">goran.r@perspektiven-pd.com</a>
+        </li>
+        <li class="footer-menu__item">
+          <p class="footer-menu__text">Ul.Jordan Mijalkov br.30-1 1000 Skopje, Macedonia</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <section class="modal modal--preload" data-modal="modal-1">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+      <div class="modal__content">
+        <section>
+          <h2 class="modal__title">Contact Information</h2>
+          <p>Fill out the form below, and we will be in touch shortly.</p>
+          <form class="form" action="#" method="POST">
+            <input class="form__input input" type="text" name="name" id="name" placeholder="Name" required>
+            <input class="form__input input" type="tel" name="phone" id="phone" placeholder="Phone*" required>
+            <input class="form__input input" type="email" name="email" id="email" placeholder="Email*" required>
+            <button class="button" type="submit">Submit</button>
+          </form>
+        </section>
+        <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal="data-close-modal" data-focus="data-focus">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <script src="js/index.js" type="module"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

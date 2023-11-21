@@ -5,7 +5,7 @@ html {
 body {
   color: $black;
   background-color: $white;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 145%;
@@ -17,16 +17,21 @@ body {
 }
 
 main {
-  margin-top: 78px;
+  margin-top: 56px;
 
   @include laptop {
-    margin-top: 116px;
+    margin-top: 80px;
   }
 }
 
 a {
   color: $black;
   text-decoration: none;
+  transition: $transition;
+
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 img {
@@ -57,7 +62,7 @@ input,
 textarea,
 select,
 button {
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
 }
 
 .visually-hidden {
