@@ -31,10 +31,11 @@
 
   &__content {
     margin-top: 36px;
+    display: grid;
+    gap: 36px;
 
     @include laptop {
-      display: grid;
-      grid-template-columns: 2fr 6fr;
+      grid-template-columns: 2fr 2fr;
     }
   }
 

@@ -45,20 +45,13 @@
     }
   }
 
-  &__content p {
-    margin-top: 24px;
-  }
-
   &__content {
-    @include tablet {
-      display: grid;
-      grid-template-columns: 250px 1fr;
-      gap: 90px;
-      align-items: center;
-    }
+    display: grid;
+    gap: 36px;
 
-    @include laptop {
-      grid-template-columns: 400px 1fr;
+    @include tablet {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 48px;
     }
   }
 
